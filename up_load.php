@@ -14,7 +14,7 @@
                 echo "THÀNH CÔNG";
             }
             else {
-                echo 'error ok';
+                echo 'error ok sdsd';
             }
         }
     }
