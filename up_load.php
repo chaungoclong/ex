@@ -1,9 +1,9 @@
 <?php 
-    if(isset($_FILES['file'])) {
-        $fileName = $_FILES['file']['name'];
+    if(isset($_FILES['ok'])) {
+        $fileName = $_FILES['ok']['name'];
         $fileType = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
         $newName = time() . '.' . $fileType;
-        $fileTmp = $_FILES['file']['tmp_name'];
+        $fileTmp = $_FILES['ok']['tmp_name'];
         $location = 'uploads/' . $newName;
 
         if(move_uploaded_file($fileTmp, $location)) {
@@ -14,7 +14,7 @@
                 echo "THÀNH CÔNG";
             }
             else {
-                echo 'error';
+                echo 'error ok';
             }
         }
     }

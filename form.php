@@ -50,7 +50,7 @@
                 console.log(file);
 
                 var form = new FormData();
-                form.append('file', file);
+                form.append('ok', file);
 
                 $.ajax({
                   url: 'up_load.php',
