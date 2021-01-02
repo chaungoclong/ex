@@ -14,7 +14,7 @@
                 echo "THÀNH CÔNG";
             }
             else {
-                echo 'error ok sdsd';
+                echo 'error osask sdsd';
             }
         }
     }
